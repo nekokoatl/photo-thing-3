@@ -3,8 +3,6 @@
 
 import Foundation
 
-
-
 class Photo {
     let title: String
     let remoteURL: NSURL
@@ -16,5 +14,5 @@ class Photo {
         self.photoID = photoID
         self.remoteURL = remoteURL
         self.dateTaken = dateTaken
-                                                                             }
             }
+    }

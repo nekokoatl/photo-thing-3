@@ -1,23 +1,32 @@
-//
 //  PhotosVC.swift
-//  photorama02
-//
 //  Created by Nekokoatl on 24/07/16.
-//  Copyright © 2016 nekokoatl. All rights reserved.
-//
 
 import UIKit
 
 class PhotosVC: UIViewController {
     
-    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var collectionView: UICollectionView!
     
     var store = PhotoStore()
+    //property injection ^^
+    let photoDataSource = PhotoDataSourse()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView.dataSource = photoDataSource
         
-        store.fetchRecentPhotos()
+        
+        store.fetchRecentPhotos() {
+            (photosResult) -> Void in
+            
+            switch photosResult {
+            case let .Success(photos):
+                print("found \(photos.count)")
+            case let .Failure(error):
+                print("smth is wrong \(error)")
+        }
     }
     
+    
                                  }
+}
