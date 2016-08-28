@@ -1,0 +1,13 @@
+PODS:
+  - RAMAnimatedTabBarController (1.5.3)
+  - RazzleDazzle (0.1.3)
+
+DEPENDENCIES:
+  - RAMAnimatedTabBarController
+  - RazzleDazzle
+
+SPEC CHECKSUMS:
+  RAMAnimatedTabBarController: 04b624cf8958a0032bf7fa9c0f2c515f59d30b9c
+  RazzleDazzle: bf883fdb5611435c82cb25c2e3451229a84e27d7
+
+COCOAPODS: 0.39.0
