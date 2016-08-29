@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B5856EF10275C8A4543DD6F1'
-               BlueprintName = 'Pods-TB'
+               BlueprintIdentifier = '25344CA191BBFF668715A996'
+               BlueprintName = 'FlickToDismiss'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_TB.framework'>
+               BuildableName = 'FlickToDismiss.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -20,7 +20,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gh0-al-KYZ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ocb-vW-s0c">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -29,7 +29,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="Czh-Jx-Bmy" customClass="PhotoCollectionViewCell" customModule="TB" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="64" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -45,7 +45,7 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="DTn-w8-xEe" firstAttribute="top" secondItem="Czh-Jx-Bmy" secondAttribute="top" id="9aX-r9-4IM"/>
                                             <constraint firstAttribute="trailing" secondItem="DTn-w8-xEe" secondAttribute="trailing" id="C2Z-i5-Ol8"/>
@@ -57,7 +57,7 @@
                                         <connections>
                                             <outlet property="imageView" destination="DTn-w8-xEe" id="2iN-LL-KTE"/>
                                             <outlet property="spinner" destination="aS9-Dw-BUY" id="Dcf-id-w34"/>
-                                            <segue destination="Zlf-Vj-QTO" kind="show" identifier="ShowPhoto" id="gcQ-7w-bpO"/>
+                                            <segue destination="Zlf-Vj-QTO" kind="presentation" identifier="ShowPhoto" modalTransitionStyle="partialCurl" id="gcQ-7w-bpO"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -112,12 +112,12 @@
         <!--Photo Info View Controller-->
         <scene sceneID="2V2-sf-0b7">
             <objects>
-                <viewController id="Zlf-Vj-QTO" customClass="PhotoInfoViewController" customModule="TB" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="Zlf-Vj-QTO" customClass="PhotoInfoViewController" customModule="TB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1bs-mJ-lKZ"/>
                         <viewControllerLayoutGuide type="bottom" id="9Ju-BK-rra"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="m8f-or-EQn" customClass="SpringImageView" customModule="Spring">
+                    <view key="view" contentMode="scaleToFill" id="m8f-or-EQn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -127,11 +127,21 @@
                                 <color key="tintColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="1Wy-Td-bBI">
-                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <barButtonItem title="tags" id="14S-UO-i8S">
                                         <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="c84-d2-L4q">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QLT-wD-H3j" customClass="DOFavoriteButton" customModule="TB" customModuleProvider="target">
+                                            <rect key="frame" x="64" y="7" width="34" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="back"/>
+                                            <connections>
+                                                <segue destination="Zk5-K4-YXB" kind="show" id="JQc-Qi-uTX"/>
+                                            </connections>
+                                        </button>
                                     </barButtonItem>
                                 </items>
                                 <color key="tintColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -151,7 +161,7 @@
                             <constraint firstItem="1Wy-Td-bBI" firstAttribute="trailing" secondItem="RYN-1d-LYv" secondAttribute="trailing" id="whg-Zn-mjS"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slidedown"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="wobble"/>
                             <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                 <real key="value" value="2"/>
                             </userDefinedRuntimeAttribute>
@@ -164,6 +174,9 @@
                             <userDefinedRuntimeAttribute type="number" keyPath="delay">
                                 <real key="value" value="1"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                         <variation key="default">
                             <mask key="constraints">
@@ -171,13 +184,15 @@
                             </mask>
                         </variation>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="imageView" destination="RYN-1d-LYv" id="taS-FK-CNd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kw4-0S-dhI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1287" y="120"/>
+            <point key="canvasLocation" x="1623" y="-48"/>
         </scene>
         <!--Animated Tab Bar Controller-->
         <scene sceneID="vor-lP-dvl">
@@ -202,4 +217,7 @@
         <image name="111.png" width="31" height="30"/>
         <image name="2222.png" width="31" height="27"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="JQc-Qi-uTX"/>
+    </inferredMetricsTieBreakers>
 </document>

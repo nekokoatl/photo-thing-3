@@ -9,6 +9,8 @@ class PhotoInfoViewController: UIViewController {
     
     @IBOutlet var imageView: UIImageView!
 
+
+    
     var photo: Photo! {
         didSet {
             navigationItem.title = photo.title
@@ -19,6 +21,8 @@ class PhotoInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
         
         store.fetchImageForPhoto(photo) { (result) -> Void in
             switch result {

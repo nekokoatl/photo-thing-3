@@ -1,9 +1,11 @@
 PODS:
+  - FlickToDismiss (0.9)
   - RAMAnimatedTabBarController (1.5.3)
   - RazzleDazzle (0.1.3)
   - Spring (1.0.3)
 
 DEPENDENCIES:
+  - FlickToDismiss (~> 0.9)
   - RAMAnimatedTabBarController
   - RazzleDazzle
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
@@ -19,6 +21,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
+  FlickToDismiss: 264b9442aea04140ee8329bbf7714c908c183c1e
   RAMAnimatedTabBarController: 04b624cf8958a0032bf7fa9c0f2c515f59d30b9c
   RazzleDazzle: bf883fdb5611435c82cb25c2e3451229a84e27d7
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FlickToDismiss.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>61408253684384E672566FC547266F32</key>
+		<key>556E98CA730CFF0ABBCE2462981AE6F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>620A3239A9EF5D554DC463D1F8E05E36</key>
+		<key>6C655AC72B877F3225148B55D22ABACC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B38CA98732CFB8711B6EC07CC789D7E8</key>
+		<key>90191F8B7FD06B48869850D923C09F3F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E246B9A6D9161240D964FD61948CF4A3</key>
+		<key>A86E69306ED5372C17F7B4D3FCE70CAF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B87AEE49DEF6CB48D0D2D7F00583ED39</key>
 		<dict>
 			<key>primary</key>
 			<true/>

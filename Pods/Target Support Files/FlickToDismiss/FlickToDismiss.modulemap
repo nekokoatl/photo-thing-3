@@ -1,0 +1,6 @@
+framework module FlickToDismiss {
+  umbrella header "FlickToDismiss-umbrella.h"
+
+  export *
+  module * { export * }
+}

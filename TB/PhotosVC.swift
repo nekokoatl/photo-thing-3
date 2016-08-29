@@ -7,6 +7,7 @@ class PhotosVC: UIViewController, UICollectionViewDelegate {
     
     @IBOutlet var collectionView: UICollectionView!
     
+    
     var store: PhotoStore!
     //property injection ^^
 

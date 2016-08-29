@@ -17,16 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lul.png" translatesAutoresizingMaskIntoConstraints="NO" id="fdW-SB-bs7">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="launch.png" translatesAutoresizingMaskIntoConstraints="NO" id="7TC-aN-1xJ">
+                                <rect key="frame" x="234" y="286" width="133" height="29"/>
+                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" name="selectedTextColor" catalog="System" colorSpace="catalog"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="fdW-SB-bs7" secondAttribute="trailing" id="Wbn-hh-ifU"/>
-                            <constraint firstItem="fdW-SB-bs7" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="cFG-43-Bky"/>
-                            <constraint firstItem="fdW-SB-bs7" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="gA0-6b-EtS"/>
-                            <constraint firstAttribute="bottom" secondItem="fdW-SB-bs7" secondAttribute="bottom" id="yvR-11-S9Y"/>
+                            <constraint firstItem="7TC-aN-1xJ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2w1-s1-kGd"/>
+                            <constraint firstItem="7TC-aN-1xJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="weM-QB-h8t"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -36,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="lul.png" width="512" height="512"/>
+        <image name="launch.png" width="133" height="29"/>
     </resources>
 </document>

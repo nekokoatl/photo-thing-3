@@ -84,11 +84,13 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-TB/FlickToDismiss.framework"
   install_framework "Pods-TB/RAMAnimatedTabBarController.framework"
   install_framework "Pods-TB/RazzleDazzle.framework"
   install_framework "Pods-TB/Spring.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-TB/FlickToDismiss.framework"
   install_framework "Pods-TB/RAMAnimatedTabBarController.framework"
   install_framework "Pods-TB/RazzleDazzle.framework"
   install_framework "Pods-TB/Spring.framework"

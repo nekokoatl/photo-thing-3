@@ -14,8 +14,6 @@
 		8D0F96131D731F58006D0125 /* RAMAnimatedTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0F96121D731F58006D0125 /* RAMAnimatedTabBarController.framework */; };
 		8D0F96161D731F7F006D0125 /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D0F96141D731F7F006D0125 /* 111.png */; };
 		8D0F96171D731F7F006D0125 /* 2222.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D0F96151D731F7F006D0125 /* 2222.png */; };
-		8D0F96191D732621006D0125 /* dra.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D0F96181D732621006D0125 /* dra.png */; };
-		8D0F96491D7366E2006D0125 /* lul.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D0F96481D7366E2006D0125 /* lul.png */; };
 		8D0F964D1D7368E3006D0125 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F964C1D7368E3006D0125 /* PhotoDataSource.swift */; };
 		8D0F964F1D7369C9006D0125 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F964E1D7369C9006D0125 /* PhotosVC.swift */; };
 		8D0F96511D736E16006D0125 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0F96501D736E16006D0125 /* FlickrAPI.swift */; };
@@ -31,6 +29,9 @@
 		8D3133521D747F4B006507C4 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31334F1D747F4B006507C4 /* Photo.swift */; };
 		8D3133531D747F4B006507C4 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3133501D747F4B006507C4 /* CoreDataStack.swift */; };
 		8D3133551D748502006507C4 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3133541D748502006507C4 /* ImageStore.swift */; };
+		8D3133571D74D96D006507C4 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3133561D74D96D006507C4 /* launch.png */; };
+		8D3133591D74DE5D006507C4 /* FlickToDismiss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3133581D74DE5D006507C4 /* FlickToDismiss.framework */; };
+		8D3133631D74E57E006507C4 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3133621D74E57E006507C4 /* star.png */; };
 		8D9266441D7451A900B60938 /* Spring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9266431D7451A900B60938 /* Spring.framework */; };
 		8D9266461D7453AA00B60938 /* PhotoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9266451D7453AA00B60938 /* PhotoInfoViewController.swift */; };
 		8D9266491D745BE900B60938 /* Phtrm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D9266471D745BE900B60938 /* Phtrm.xcdatamodeld */; };
@@ -46,8 +47,6 @@
 		8D0F96121D731F58006D0125 /* RAMAnimatedTabBarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RAMAnimatedTabBarController.framework; path = "../../Library/Developer/Xcode/DerivedData/TB-eaolbeffzhsmvkerlmeswnposhzn/Build/Products/Debug-iphonesimulator/RAMAnimatedTabBarController.framework"; sourceTree = "<group>"; };
 		8D0F96141D731F7F006D0125 /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.png; sourceTree = "<group>"; };
 		8D0F96151D731F7F006D0125 /* 2222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2222.png; sourceTree = "<group>"; };
-		8D0F96181D732621006D0125 /* dra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dra.png; sourceTree = "<group>"; };
-		8D0F96481D7366E2006D0125 /* lul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lul.png; sourceTree = "<group>"; };
 		8D0F964B1D7368E3006D0125 /* TB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TB-Bridging-Header.h"; sourceTree = "<group>"; };
 		8D0F964C1D7368E3006D0125 /* PhotoDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
 		8D0F964E1D7369C9006D0125 /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
@@ -64,6 +63,10 @@
 		8D31334F1D747F4B006507C4 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		8D3133501D747F4B006507C4 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		8D3133541D748502006507C4 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageStore.swift; path = ../ImageStore.swift; sourceTree = "<group>"; };
+		8D3133561D74D96D006507C4 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		8D3133581D74DE5D006507C4 /* FlickToDismiss.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlickToDismiss.framework; path = "Pods/../build/Debug-iphoneos/FlickToDismiss.framework"; sourceTree = "<group>"; };
+		8D31335A1D74DE61006507C4 /* DOFavoriteButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DOFavoriteButton.framework; path = "Pods/../build/Debug-iphoneos/DOFavoriteButton.framework"; sourceTree = "<group>"; };
+		8D3133621D74E57E006507C4 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		8D9266431D7451A900B60938 /* Spring.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spring.framework; path = "Pods/../build/Debug-iphoneos/Spring.framework"; sourceTree = "<group>"; };
 		8D9266451D7453AA00B60938 /* PhotoInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInfoViewController.swift; sourceTree = "<group>"; };
 		8D9266481D745BE900B60938 /* Phtrm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Phtrm.xcdatamodel; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3133591D74DE5D006507C4 /* FlickToDismiss.framework in Frameworks */,
 				8D9266441D7451A900B60938 /* Spring.framework in Frameworks */,
 				8D0F965D1D73764E006D0125 /* RazzleDazzle.framework in Frameworks */,
 				8D0F96131D731F58006D0125 /* RAMAnimatedTabBarController.framework in Frameworks */,
@@ -144,11 +148,11 @@
 		8D0F964A1D736707006D0125 /* pics */ = {
 			isa = PBXGroup;
 			children = (
+				8D3133621D74E57E006507C4 /* star.png */,
+				8D3133561D74D96D006507C4 /* launch.png */,
 				8D0F965A1D736E62006D0125 /* zzz.png */,
 				8D0F96141D731F7F006D0125 /* 111.png */,
-				8D0F96181D732621006D0125 /* dra.png */,
 				8D0F96151D731F7F006D0125 /* 2222.png */,
-				8D0F96481D7366E2006D0125 /* lul.png */,
 			);
 			name = pics;
 			sourceTree = "<group>";
@@ -156,6 +160,8 @@
 		CC92EDABA5DAEBF121244FE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D31335A1D74DE61006507C4 /* DOFavoriteButton.framework */,
+				8D3133581D74DE5D006507C4 /* FlickToDismiss.framework */,
 				8D9266431D7451A900B60938 /* Spring.framework */,
 				8D0F965C1D73764E006D0125 /* RazzleDazzle.framework */,
 				8D0F96121D731F58006D0125 /* RAMAnimatedTabBarController.framework */,
@@ -226,12 +232,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3133571D74D96D006507C4 /* launch.png in Resources */,
 				8D0F965B1D736E62006D0125 /* zzz.png in Resources */,
-				8D0F96191D732621006D0125 /* dra.png in Resources */,
 				8D0F960B1D731E57006D0125 /* LaunchScreen.storyboard in Resources */,
 				8D0F96161D731F7F006D0125 /* 111.png in Resources */,
-				8D0F96491D7366E2006D0125 /* lul.png in Resources */,
 				8D0F96171D731F7F006D0125 /* 2222.png in Resources */,
+				8D3133631D74E57E006507C4 /* star.png in Resources */,
 				8D0F96081D731E57006D0125 /* Assets.xcassets in Resources */,
 				8D0F96061D731E57006D0125 /* Main.storyboard in Resources */,
 			);
