@@ -3,7 +3,7 @@
 
 import UIKit
 
-class PhotosVC: UIViewController {
+class PhotosVC: UIViewController, UICollectionViewDelegate {
     
     @IBOutlet var collectionView: UICollectionView!
     
@@ -12,11 +12,14 @@ class PhotosVC: UIViewController {
 
     let photoDataSource = PhotoDataSource()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.dataSource = photoDataSource
         collectionView.delegate = self
+        
+        self.store = PhotoStore()
         
         store.fetchRecentPhotos() {
             (photosResult) -> Void in
@@ -45,22 +48,20 @@ class PhotosVC: UIViewController {
     }
     
     func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
+        
         let photo = photoDataSource.photos[indexPath.row]
         
-        // Download the image data, which could take some time
+        // загруз image data какое-то время
         store.fetchImageForPhoto(photo) { (result) -> Void in
             NSOperationQueue.mainQueue().addOperationWithBlock() {
                 
-                // The index path for the photo might have changed between the
-                // time the rquest started and finished, so find the most
-                // recent index path
+                // find the most recent index path
                 
-                // (Note: You will have an error on the next line; you will fix it soon)
                 let photoIndex = self.photoDataSource.photos.indexOf(photo)!
                 let photoIndexPath = NSIndexPath(forRow: photoIndex, inSection: 0)
                 
-                // WHen the request finished, only update the cell if it's still visible
-                if let cell = self.collectionView.cellForItemAtIndexPath(photoIndexPath) as? PhotoCollecionViewCell {
+                // update  cell if it's still visible
+                if let cell = self.collectionView.cellForItemAtIndexPath(photoIndexPath) as? PhotoCollectionViewCell {
                     cell.updateWithImage(photo.image)
                 }
             }

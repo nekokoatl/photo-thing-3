@@ -1,10 +1,9 @@
 //  PhotoCollectionViewCell.swift
 //  Created by Nekokoatl on 28/08/16.
-//
 
 import UIKit
 
-class PhotoCollecionViewCell: UICollectionViewCell {
+class PhotoCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var spinner: UIActivityIndicatorView!

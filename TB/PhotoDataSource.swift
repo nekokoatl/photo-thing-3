@@ -13,13 +13,12 @@ class PhotoDataSource: NSObject, UICollectionViewDataSource {
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let identifier = "UICollectionViewCell"
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(identifier, forIndexPath: indexPath) as! PhotoCollecionViewCell
-        
+        let identifier = "PhotoCollectionViewCell"
+        let cell =
+            collectionView.dequeueReusableCellWithReuseIdentifier(identifier,
+                                                                  forIndexPath: indexPath) as! PhotoCollectionViewCell
         let photo = photos[indexPath.row]
         cell.updateWithImage(photo.image)
         
-        return cell
-    }
-    
+        return cell    }
 }

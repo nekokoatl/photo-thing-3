@@ -16,9 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        let rootViewController = window!.rootViewController as! UINavigationController
-        let photosViewController = rootViewController.topViewController as! PhotosVC
-        photosViewController.store = PhotoStore()
+//        let rootViewController = window!.rootViewController as! RAMAnimatedTabBarController
+//        let photosViewController = rootViewController.topViewController as! PhotosVC
+//        photosViewController.store = PhotoStore()
         
         
         return true
