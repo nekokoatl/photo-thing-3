@@ -9,7 +9,9 @@ class PhotoInfoViewController: UIViewController {
     
     @IBOutlet var imageView: UIImageView!
 
-
+    @IBAction func cancel(sender: AnyObject) {
+        self.dismissViewControllerAnimated(false, completion: nil)
+    }
     
     var photo: Photo! {
         didSet {

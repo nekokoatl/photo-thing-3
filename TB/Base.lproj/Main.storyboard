@@ -131,15 +131,17 @@
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <barButtonItem title="tags" id="14S-UO-i8S">
-                                        <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </barButtonItem>
                                     <barButtonItem style="plain" id="c84-d2-L4q">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QLT-wD-H3j" customClass="DOFavoriteButton" customModule="TB" customModuleProvider="target">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QLT-wD-H3j">
                                             <rect key="frame" x="64" y="7" width="34" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="back"/>
+                                            <state key="normal" title="back">
+                                                <color key="titleShadowColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
                                             <connections>
-                                                <segue destination="Zk5-K4-YXB" kind="show" id="JQc-Qi-uTX"/>
+                                                <segue destination="Zk5-K4-YXB" kind="show" id="aUc-fC-FYK"/>
                                             </connections>
                                         </button>
                                     </barButtonItem>
@@ -218,6 +220,6 @@
         <image name="2222.png" width="31" height="27"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JQc-Qi-uTX"/>
+        <segue reference="aUc-fC-FYK"/>
     </inferredMetricsTieBreakers>
 </document>
