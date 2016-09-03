@@ -36,16 +36,18 @@ class PhotosVC: UIViewController, UICollectionViewDelegate {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "ShowPhoto" {
-            if let selectedIndexPath = collectionView.indexPathsForSelectedItems()?.first {
-                
-                let photo = photoDataSource.photos[selectedIndexPath.row]
-                
-                let destinationVC = segue.destinationViewController as! PhotoInfoViewController
-                destinationVC.photo = photo
-                destinationVC.store = store
-            }
-        }
+//        if segue.identifier == "ShowPhoto" {
+//            if let selectedIndexPath = collectionView.indexPathsForSelectedItems()?.first {
+//                
+//                let photo = photoDataSource.photos[selectedIndexPath.row]
+//                
+//        //        let destinationVC = segue.destinationViewController as! PhotoInfoViewController
+//                let destinationVC = segue.destinationViewController as! FlickToDismissViewController
+//
+//                destinationVC.photo = photo
+//                destinationVC.store = store
+//            }
+//        }
     }
     
     func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
@@ -67,6 +69,18 @@ class PhotosVC: UIViewController, UICollectionViewDelegate {
                 }
             }
         }
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let index = indexPath.item
+        let photo = self.photoDataSource.photos[index]
+        
+        guard let flickToDismissVC = self.storyboard?.instantiateViewControllerWithIdentifier("flickToDismissVC") as? FlickToDismissViewController else {
+            return
+        }
+        flickToDismissVC.store = self.store
+        flickToDismissVC.photo = photo
+        self.presentViewController(flickToDismissVC, animated: true, completion: nil)
     }
     
 }

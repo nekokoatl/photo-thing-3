@@ -32,6 +32,7 @@
 		8D3133571D74D96D006507C4 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3133561D74D96D006507C4 /* launch.png */; };
 		8D3133591D74DE5D006507C4 /* FlickToDismiss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3133581D74DE5D006507C4 /* FlickToDismiss.framework */; };
 		8D3133631D74E57E006507C4 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3133621D74E57E006507C4 /* star.png */; };
+		8D3133691D7969B3006507C4 /* FlickToDismissViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3133681D7969B3006507C4 /* FlickToDismissViewController.swift */; };
 		8D9266441D7451A900B60938 /* Spring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9266431D7451A900B60938 /* Spring.framework */; };
 		8D9266461D7453AA00B60938 /* PhotoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9266451D7453AA00B60938 /* PhotoInfoViewController.swift */; };
 		8D9266491D745BE900B60938 /* Phtrm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D9266471D745BE900B60938 /* Phtrm.xcdatamodeld */; };
@@ -67,6 +68,7 @@
 		8D3133581D74DE5D006507C4 /* FlickToDismiss.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlickToDismiss.framework; path = "Pods/../build/Debug-iphoneos/FlickToDismiss.framework"; sourceTree = "<group>"; };
 		8D31335A1D74DE61006507C4 /* DOFavoriteButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DOFavoriteButton.framework; path = "Pods/../build/Debug-iphoneos/DOFavoriteButton.framework"; sourceTree = "<group>"; };
 		8D3133621D74E57E006507C4 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		8D3133681D7969B3006507C4 /* FlickToDismissViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickToDismissViewController.swift; sourceTree = "<group>"; };
 		8D9266431D7451A900B60938 /* Spring.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spring.framework; path = "Pods/../build/Debug-iphoneos/Spring.framework"; sourceTree = "<group>"; };
 		8D9266451D7453AA00B60938 /* PhotoInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInfoViewController.swift; sourceTree = "<group>"; };
 		8D9266481D745BE900B60938 /* Phtrm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Phtrm.xcdatamodel; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				8D0F965E1D737742006D0125 /* PhotoCollectionViewCell.swift */,
 				8D0F96501D736E16006D0125 /* FlickrAPI.swift */,
 				8D3133441D7479C6006507C4 /* TagsViewController.swift */,
+				8D3133681D7969B3006507C4 /* FlickToDismissViewController.swift */,
 				8D3133461D747B01006507C4 /* TagDataSource.swift */,
 				8D0F96041D731E57006D0125 /* Main.storyboard */,
 				8D0F96091D731E57006D0125 /* LaunchScreen.storyboard */,
@@ -302,6 +305,7 @@
 				8D0F965F1D737742006D0125 /* PhotoCollectionViewCell.swift in Sources */,
 				8D0F96561D736E3D006D0125 /* IntroVC.swift in Sources */,
 				8D9266491D745BE900B60938 /* Phtrm.xcdatamodeld in Sources */,
+				8D3133691D7969B3006507C4 /* FlickToDismissViewController.swift in Sources */,
 				8D0F96531D736E23006D0125 /* AppDelegate.swift in Sources */,
 				8D0F96591D736E4B006D0125 /* PhotoStore.swift in Sources */,
 				8D3133521D747F4B006507C4 /* Photo.swift in Sources */,
