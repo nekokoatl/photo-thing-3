@@ -76,6 +76,8 @@ public class FlickToDismissViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+//😱
+       self.view.backgroundColor = UIColor.myBackground()
 
         
             store.fetchImageForPhoto(photo) { (result) -> Void in
