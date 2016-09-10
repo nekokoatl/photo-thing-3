@@ -1,5 +1,5 @@
 //  Created by Nekokoatl on 03/09/16.
-// based on RazzleDazzle by Laura Skelton
+// based on Razzlecupcake by Laura Skelton
 
 import UIKit
 import RazzleDazzle
@@ -12,8 +12,8 @@ class SuperIntroVC: AnimatedPagingScrollViewController {
     private let razzle = UIImageView(image: UIImage(named: "3"))
     private let dazzle = UIImageView(image: UIImage(named: "1"))
     
-    private let musicStand = UIImageView(image: UIImage(named: "133"))
-    private let musicNotes = UIImageView(image: UIImage(named: "7"))
+    private let colourfullStuff = UIImageView(image: UIImage(named: "133"))
+    private let strawberries = UIImageView(image: UIImage(named: "7"))
     private let plane = UIImageView(image: UIImage(named: "8"))
     private var planePathLayer = CAShapeLayer()
     private let planePathView = UIView()
@@ -58,8 +58,8 @@ class SuperIntroVC: AnimatedPagingScrollViewController {
         contentView.addSubview(razzle)
         contentView.addSubview(dazzle)
         contentView.addSubview(planePathView)
-        contentView.addSubview(musicStand)
-        contentView.addSubview(musicNotes)
+        contentView.addSubview(colourfullStuff)
+        contentView.addSubview(strawberries)
         contentView.addSubview(bigCloud)
         contentView.addSubview(littleCloud)
         contentView.addSubview(sun)
@@ -74,7 +74,7 @@ class SuperIntroVC: AnimatedPagingScrollViewController {
         configureIFTTTPresents()
         configureStar()
         configureRazzleDazzleLabels()
-        configureMusicStand()
+        configurecolourfullStuff()
         configurePageText()
         configureClouds()
         configureSun()
@@ -93,17 +93,17 @@ class SuperIntroVC: AnimatedPagingScrollViewController {
     }
     
     private func configureIFTTTPresents() {
-        // Keep IFTTTPresents centered on pages 0 and 1, offset 20 pixels down from the top of the view
+        // Keep flower centered on pages 0 and 1, offset 20 pixels down from the top of the view
         NSLayoutConstraint(item: iftttPresents, attribute: .Top, relatedBy: .Equal, toItem: contentView, attribute: .Top, multiplier: 1, constant: 20).active = true
         keepView(iftttPresents, onPages: [0,1])
         
-        // Hide IFTTTPresents when we get to page 1
+        // Hide flower when we get to page 1
         let iftttPresentsHideAnimation = HideAnimation(view: iftttPresents, hideAt: 1)
         animator.addAnimation(iftttPresentsHideAnimation)
     }
     
     private func configureStar() {
-        // Center the star on the page, and keep it centered on pages 0 and 1
+        // Center the splash on the page, and keep it centered on pages 0 and 1
         let width = NSLayoutConstraint(item: star, attribute: .Width, relatedBy: .LessThanOrEqual, toItem: scrollView, attribute: .Width, multiplier: 1.3, constant: 0)
         let height = NSLayoutConstraint(item: star, attribute: .Height, relatedBy: .LessThanOrEqual, toItem: scrollView, attribute: .Height, multiplier: 1, constant: 0)
         let top = NSLayoutConstraint(item: star, attribute: .Top, relatedBy: .GreaterThanOrEqual, toItem: scrollView, attribute: .Top, multiplier: 1, constant: 30)
@@ -112,26 +112,26 @@ class SuperIntroVC: AnimatedPagingScrollViewController {
         NSLayoutConstraint.activateConstraints([width, height, top, aspect, centerY])
         keepView(star, onPages: [0,1])
         
-        // Scale up the star to 7 times its original size between pages 0 and 1, with a quadratic Ease In easing function
+        // Scale up the splash to 7 times its original size between pages 0 and 1, with a quadratic Ease In easing function
         let starScaleAnimation = ScaleAnimation(view: star)
         starScaleAnimation.addKeyframe(0, value: 1, easing: EasingFunctionEaseInQuad)
         starScaleAnimation[1] = 10
         animator.addAnimation(starScaleAnimation)
         
-        // Hide the star when we get to page 1
+        // Hide the splash when we get to page 1
         let starHideAnimation = HideAnimation(view: star, hideAt: 1)
         animator.addAnimation(starHideAnimation)
     }
     
     private func configureRazzleDazzleLabels() {
-        // Set the size constraints on Razzle and Dazzle
+        // Set the size constraints on Razzle and cupcake
         let razzleWidth = NSLayoutConstraint(item: razzle, attribute: .Width, relatedBy: .Equal, toItem: star, attribute: .Width, multiplier: 0.6, constant: 0)
         let razzleHeight = NSLayoutConstraint(item: razzle, attribute: .Height, relatedBy: .Equal, toItem: razzle, attribute: .Width, multiplier: 218.0 / 576.0, constant: 0)
         let dazzleWidth = NSLayoutConstraint(item: dazzle, attribute: .Width, relatedBy: .Equal, toItem: star, attribute: .Width, multiplier: 0.6, constant: 0)
         let dazzleHeight = NSLayoutConstraint(item: dazzle, attribute: .Height, relatedBy: .Equal, toItem: dazzle, attribute: .Width, multiplier: 386.0 / 588.0, constant: 0)
         NSLayoutConstraint.activateConstraints([razzleWidth, razzleHeight, dazzleWidth, dazzleHeight])
         
-        // Create the vertical position constraints for Razzle and Dazzle
+        // Create the vertical position constraints for Razzle and cupcake
         let razzleVerticalConstraint = NSLayoutConstraint(item: razzle, attribute: .CenterY, relatedBy: .Equal, toItem: star, attribute: .CenterY, multiplier: 1, constant: 0)
         let dazzleVerticalConstraint = NSLayoutConstraint(item: dazzle, attribute: .CenterY, relatedBy: .Equal, toItem: star, attribute: .CenterY, multiplier: 1, constant: 0)
         NSLayoutConstraint.activateConstraints([razzleVerticalConstraint, dazzleVerticalConstraint])
@@ -148,7 +148,7 @@ class SuperIntroVC: AnimatedPagingScrollViewController {
         dazzleVerticalAnimation[1] = 260
         animator.addAnimation(dazzleVerticalAnimation)
         
-        // Center Razzle and Dazzle horizontally on the first page of the scroll view
+        // Center Razzle and cupcake horizontally on the first page of the scroll view
         keepView(razzle, onPage: 0)
         keepView(dazzle, onPage: 0)
         
@@ -165,33 +165,33 @@ class SuperIntroVC: AnimatedPagingScrollViewController {
         animator.addAnimation(dazzleRotationAnimation)
     }
     
-    private func configureMusicStand() {
+    private func configurecolourfullStuff() {
         // Create the vertical position constraint for the music stand
-        let musicStandVerticalConstraint = NSLayoutConstraint(item: musicStand, attribute: .Bottom, relatedBy: .GreaterThanOrEqual, toItem: scrollView, attribute: .Bottom, multiplier: 1, constant: 0)
-        let standTop = NSLayoutConstraint(item: musicStand, attribute: .Top, relatedBy: .GreaterThanOrEqual, toItem: scrollView, attribute: .Top, multiplier: 1, constant: 40)
-        let standWidth = NSLayoutConstraint(item: musicStand, attribute: .Width, relatedBy: .LessThanOrEqual, toItem: scrollView, attribute: .Width, multiplier: 1, constant: 0)
-        let standAspect = NSLayoutConstraint(item: musicStand, attribute: .Height, relatedBy: .Equal, toItem: musicStand, attribute: .Width, multiplier: 1184.0 / 750.0, constant: 0)
-        let standHeight = NSLayoutConstraint(item: musicStand, attribute: .Height, relatedBy: .LessThanOrEqual, toItem: scrollView, attribute: .Height, multiplier: 1, constant: 0)
-        NSLayoutConstraint.activateConstraints([musicStandVerticalConstraint, standTop, standWidth, standAspect, standHeight])
+        let colourfullStuffVerticalConstraint = NSLayoutConstraint(item: colourfullStuff, attribute: .Bottom, relatedBy: .GreaterThanOrEqual, toItem: scrollView, attribute: .Bottom, multiplier: 1, constant: 0)
+        let standTop = NSLayoutConstraint(item: colourfullStuff, attribute: .Top, relatedBy: .GreaterThanOrEqual, toItem: scrollView, attribute: .Top, multiplier: 1, constant: 40)
+        let standWidth = NSLayoutConstraint(item: colourfullStuff, attribute: .Width, relatedBy: .LessThanOrEqual, toItem: scrollView, attribute: .Width, multiplier: 1, constant: 0)
+        let standAspect = NSLayoutConstraint(item: colourfullStuff, attribute: .Height, relatedBy: .Equal, toItem: colourfullStuff, attribute: .Width, multiplier: 1184.0 / 750.0, constant: 0)
+        let standHeight = NSLayoutConstraint(item: colourfullStuff, attribute: .Height, relatedBy: .LessThanOrEqual, toItem: scrollView, attribute: .Height, multiplier: 1, constant: 0)
+        NSLayoutConstraint.activateConstraints([colourfullStuffVerticalConstraint, standTop, standWidth, standAspect, standHeight])
         
         // Keep the right side of the music stand at the right edge of pages 1 and 2
-        keepView(musicStand, onPages: [1,2], withAttribute: .Right)
+        keepView(colourfullStuff, onPages: [1,2], withAttribute: .Right)
         
         // Animate the music stand's bottom offset from the view to go from being offset 0 times to 1 time the height of the contentView between pages 1 and 2,
         // with a cubic Ease Out easing function
-        let musicStandVerticalAnimation = ConstraintMultiplierAnimation(superview: scrollView, constraint: musicStandVerticalConstraint, attribute: .Height, referenceView: contentView)
-        musicStandVerticalAnimation.addKeyframe(1, value: 0, easing: EasingFunctionEaseOutCubic)
-        musicStandVerticalAnimation[2] = 1
-        animator.addAnimation(musicStandVerticalAnimation)
+        let colourfullStuffVerticalAnimation = ConstraintMultiplierAnimation(superview: scrollView, constraint: colourfullStuffVerticalConstraint, attribute: .Height, referenceView: contentView)
+        colourfullStuffVerticalAnimation.addKeyframe(1, value: 0, easing: EasingFunctionEaseOutCubic)
+        colourfullStuffVerticalAnimation[2] = 1
+        animator.addAnimation(colourfullStuffVerticalAnimation)
         
         // Lay out the music notes
-        let notesWidth = NSLayoutConstraint(item: musicNotes, attribute: .Width, relatedBy: .Equal, toItem: musicStand, attribute: .Width, multiplier: 1, constant: 0)
-        let notesHeight = NSLayoutConstraint(item: musicNotes, attribute: .Height, relatedBy: .Equal, toItem: musicStand, attribute: .Height, multiplier: 1, constant: 0)
-        let notesCenterY = NSLayoutConstraint(item: musicNotes, attribute: .CenterY, relatedBy: .Equal, toItem: musicStand, attribute: .CenterY, multiplier: 1, constant: 0)
+        let notesWidth = NSLayoutConstraint(item: strawberries, attribute: .Width, relatedBy: .Equal, toItem: colourfullStuff, attribute: .Width, multiplier: 1, constant: 0)
+        let notesHeight = NSLayoutConstraint(item: strawberries, attribute: .Height, relatedBy: .Equal, toItem: colourfullStuff, attribute: .Height, multiplier: 1, constant: 0)
+        let notesCenterY = NSLayoutConstraint(item: strawberries, attribute: .CenterY, relatedBy: .Equal, toItem: colourfullStuff, attribute: .CenterY, multiplier: 1, constant: 0)
         NSLayoutConstraint.activateConstraints([notesWidth, notesHeight, notesCenterY])
         
         // Move the music notes in quickly from the right when we change from page 0.5 to 1, and keep them centered on pages 1 and 2
-        keepView(musicNotes, onPages: [2, 1, 2], atTimes: [0.5, 1, 2], withAttribute: .Right)
+        keepView(strawberries, onPages: [2, 1, 2], atTimes: [0.5, 1, 2], withAttribute: .Right)
     }
     
     private func configurePageText() {
