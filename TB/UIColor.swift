@@ -12,5 +12,11 @@ extension UIColor {
         let image = UIImage(named: "backgr.jpg")
         return UIColor(patternImage: image!)
 
+        
+        
+     //   let  : NSString = "Hello world"
+        
+   //     let value2 = value
+        
     }
 }

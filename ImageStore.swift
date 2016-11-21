@@ -11,7 +11,7 @@ class ImageStore {
             NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
         let documentDirectory = documentDirectories.first!
         
-        return documentDirectory.URLByAppendingPathComponent(key)
+        return documentDirectory.URLByAppendingPathComponent(key)!
     }
     
     func setImage(image: UIImage, forKey key: String) {

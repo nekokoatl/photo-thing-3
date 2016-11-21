@@ -37,7 +37,8 @@ class SuperIntroVC: AnimatedPagingScrollViewController {
         super.viewDidLoad()
         configureViews()
         configureAnimations()
-        UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: .Fade)
+        super.prefersStatusBarHidden()
+//        UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: .Fade)
     }
     
     override func viewWillAppear(animated: Bool) {

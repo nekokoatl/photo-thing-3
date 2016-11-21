@@ -6,16 +6,16 @@ import CoreData
 //raw value that matches corresponding Flickr endpoint
 enum Method: String {
     case RecentPhotos = "flickr.photos.getRecent"
-                    }
+}
 
 enum PhotosResult {
     case Success([Photo])
     case Failure(ErrorType)
-                  }
+}
 
 enum FlickrError: ErrorType {
     case InvalidJSONData
-                            }
+}
 
 
 //knowing what Fliсkr API expects
